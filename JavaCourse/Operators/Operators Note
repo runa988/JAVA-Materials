@@ -1,0 +1,102 @@
+What is an Operator?
+An operator is a symbol that performs an operation on one or more operands (values or variables).
+
+Example: 
+int c = a + b;
++ → operator
+a, b → operands
+= → assignment operator
+
+Types of Operators 
+Java has 8 main types of operators:
+
+1️ Arithmetic Operators
+2️ Assignment Operators
+3️ Relational (Comparison) Operators
+4️ Logical Operators
+5️ Unary Operators
+6️ Increment & Decrement Operators
+7️ Conditional (Ternary) Operator
+8️ Bitwise Operators 
+
+1️ Arithmetic Operators
+👉 Used to perform mathematical operations
+Operator		Meaning						Example
+	+				Addition						a + b
+	-				Subtraction					a - b
+	*				Multiplication				a * b
+	/				Division						a / b
+	%				Modulus (remainder)	a % b
+
+2️ Assignment Operators
+👉 Used to assign values to variables
+Operator		Meaning						Example
+	=				Assign							a = 10
+	+=			Add & assign				a += 5
+	-=				Subtract & assign		a -= 3
+	*=			Multiply & assign		a *= 2
+	/=				Divide & assign			a /= 2
+	%=			Mod & assign				a %= 2
+
+3️ Relational (Comparison) Operators
+👉 Used to compare two values
+👉 Result is boolean (true or false)
+Operator		Meaning
+	==			Equal to
+	!=				Not equal
+	>				Greater than
+	<				Less than
+	>=			Greater than or equal
+	<=			Less than or equal
+
+4️  Logical Operators
+👉 Used with boolean conditions
+Operator			Meaning
+	&&	 			Logical AND
+	!					Logical NOT
+	|| 					Logical OR
+
+5️ Unary Operators
+👉 Operate on single operand
+Operator		Meaning			Example
+	+				Unary plus			+a
+	-				Unary minus		-a
+	!				Logical NOT		!true
+
+6️ Increment & Decrement Operators
+👉 Increase or decrease value by 1
+Operator			Meaning
+	++				Increment
+	--					Decrement
+Pre vs Post (VERY IMPORTANT)
+
+7️ Conditional (Ternary) Operator
+👉 Short form of if–else
+Syntax
+condition ? value_if_true : value_if_false;
+Ex: int max = (a > b) ? a : b;
+
+8️  Bitwise Operators (Intro)
+👉 Operate on binary values
+Operator		Meaning
+	&				AND
+	^				XOR
+	~				NOT
+	<<			Left shift
+	>>			Right shift
+
+
+****** Summary Table ******
+ 
+Category					Purpose
+Arithmetic				Mathematical operations
+Assignment				Assign values
+Relational				Compare values
+Logical					Combine conditions
+Unary						Single operand
+Inc/Dec					Increase / decrease
+Ternary					Short if–else
+Bitwise					Binary operations
+
+
+Arithmetic	Assignment		Relational		Logical		Unary		Inc/Dec		Ternary		Bitwise

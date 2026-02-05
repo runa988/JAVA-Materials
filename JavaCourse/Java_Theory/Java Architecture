@@ -1,0 +1,188 @@
+JAVA ARCHITECTURE 
+------------------------------
+1️ What is Java Architecture?
+-----------------------------------
+
+Java Architecture explains how a Java program is compiled, loaded, verified, executed, and 
+managed using different components such as the compiler, JVM, memory areas, and execution engine.
+
+Purpose of Java Architecture
+
+	1. To achieve platform independence
+	2. To ensure security
+	3. To manage memory automatically
+	4. To execute programs efficiently
+
+2️ Overview of Java Architecture
+----------------------------------------
+
+Java architecture consists of the following main components:
+
+	1. Java Source Code
+	2. Java Compiler
+	3. Java Bytecode
+	4. Java Virtual Machine (JVM)
+	5. Class Loader Subsystem
+	6. Runtime Data Areas
+	7. Execution Engine
+	8. Garbage Collector
+	9. Java Native Interface (JNI)
+	10. Operating System & Hardware
+
+3️ Java Program Execution Flow
+--------------------------------------
+
+The execution of a Java program happens in clear steps:
+
+									.java file
+									   ↓
+							Java Compiler (javac)
+									   ↓
+							.class file (Bytecode)
+									   ↓
+								Class Loader
+									   ↓
+							  Bytecode Verifier
+									   ↓
+							Runtime Data Areas
+									   ↓
+							Execution Engine
+									   ↓
+							Operating System
+
+
+📌 Key Idea:		This flow makes Java platform independent.
+
+4️ Java Compiler
+--------------------
+
+Role
+
+1. Converts Java source code (.java) into bytecode (.class)
+2. Bytecode is not machine-specific
+
+📌 Bytecode cannot run directly on hardware; it needs JVM.
+
+5️ Java Virtual Machine (JVM)
+------------------------------------
+
+The JVM is an abstract machine that executes Java bytecode and provides a runtime environment.
+
+	1. JVM is platform dependent
+	2. Java programs are platform independent
+	3. Each OS has its own JVM implementation
+
+📌 JVM is the heart of Java architecture.
+
+6️ Class Loader Subsystem
+-------------------------------
+Loads .class files into JVM memory dynamically at runtime.
+
+Types of Class Loaders
+
+	1. Bootstrap Class Loader
+		Loads core Java classes
+		Example: java.lang, java.util
+	2. Extension Class Loader
+		Loads extension libraries
+	3. Application Class Loader
+		Loads user-defined classes
+	
+	📌 Classes are loaded only when needed.
+
+7️ Bytecode Verifier
+------------------------
+Ensures that the bytecode is safe and valid before execution.
+
+Checks Performed
+
+	1. No illegal memory access
+	2. Proper data type usage
+	3. No stack overflow or underflow
+
+📌 Provides security in Java.
+
+8️ Runtime Data Areas (Memory Areas)
+
+These are the memory areas created when JVM starts.
+
+	8.1 Method Area
+	--------------------
+	Stores class-level information
+	Stores static variables
+	Stores method bytecode
+	
+	8.2 Heap
+	----------
+	Stores objects
+	Shared among all threads
+	Managed by Garbage Collector
+	
+	📌 Largest memory area.
+	
+	8.3 Java Stack
+	-----------------
+	
+	Stores method calls
+	Stores local variables
+	One stack per thread
+	
+	8.4 Program Counter (PC) Register
+	------------------------------------------
+	
+	Stores address of current instruction
+	Each thread has its own PC register
+	
+	8.5 Native Method Stack
+	------------------------------
+	
+	Used for native (C/C++) methods
+
+9️ Execution Engine
+------------------------
+Executes bytecode instructions.
+
+Components
+--------------------
+	a) Interpreter  
+		Executes bytecode line by line
+		Slower execution
+	
+	b) Just-In-Time (JIT) Compiler
+		Converts bytecode into native machine code
+		Improves performance
+
+📌 JVM uses both for efficiency.
+
+10 Garbage Collector
+--------------------------
+	1. Automatically removes unused objects from heap memory
+	2. Prevents memory leaks
+	3. Improves performance
+
+📌 Java does not require manual memory deallocation.
+
+1️1 Java Native Interface (JNI)
+------------------------------------
+	1. Allows Java programs to interact with native languages like C and C++
+	2. Used for hardware-level access
+
+1️2️ Native Method Libraries
+----------------------------------
+	1. Contains native code
+	2. Accessed using JNI
+
+1️3️ Role of Operating System
+-----------------------------------
+	1. JVM interacts with OS
+	2. OS provides hardware resources
+	3. Makes execution possible on different platforms
+
+1️4️ Advantages of Java Architecture
+--------------------------------------------
+	1. Platform independence
+	2. High security
+	3. Automatic memory management
+	4. Better performance
+	5. Multithreading support
+

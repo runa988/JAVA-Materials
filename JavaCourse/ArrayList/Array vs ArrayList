@@ -1,0 +1,48 @@
+What is an Array?
+An array is a collection of multiple values of the same data type stored in continuous memory 
+locations under a single variable name.
+
+Example:
+int a[] = {10, 20, 30};
+
+What can an Array do?
+
+✔ Store multiple values
+✔ Access elements using index
+✔ Fast data access
+✔ Simple and efficient
+
+🔴 Limitations of Array
+Even though arrays are useful, they have some limitations:
+
+1️ Fixed Size
+Array size must be decided at the time of creation
+Size cannot be changed at runtime
+int a[] = new int[5];   // size fixed
+
+2️ Memory Wastage
+If the array size is large but usage is small → memory wasted
+If array size is small → cannot add more elements
+
+3️ No Built-in Methods
+Arrays do not provide methods like add, remove, search
+Manual coding is required for operations
+
+4️ Cannot Shrink or Grow
+Once created, array size cannot increase or decrease
+
+What is an ArrayList?
+An ArrayList is a resizable array that can grow or shrink at runtime.
+
+Array vs ArrayList:
+An array is a fixed-size data structure, whereas an ArrayList is a dynamic data structure that can grow or shrink at runtime.
+
+Example:
+ArrayList<Integer> list = new ArrayList<>();
+
+Key Features of ArrayList
+
+✔ Dynamic resizing
+✔ Stores objects (uses wrapper classes)
+✔ Easy element manipulation
+✔ Part of Collections Framework

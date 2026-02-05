@@ -1,0 +1,30 @@
+🔐 Access Specifiers in Java
+     Access specifiers control the visibility of classes and their members (methods or variables).
+
+🔹 Types of Access Specifiers in Java
+
+	1️ public : public → accessible everywhere
+		- Accessible from anywhere
+		- Can be accessed from any class, any package
+
+	2️ default (no keyword used): default → same package only
+		- Accessible only within the same package
+		- Not accessible from outside the package
+
+	3️ protected :  protected → same package + subclass
+		- Accessible within the same package
+		- Accessible in subclasses of another package
+	
+	4️ private : private → same class only
+		-Accessible only within the same class
+		-Not accessible outside the class
+		
+		
+		| Access Specifier | Same Class | Same Package | Subclass (other package) | Other Package |
+		| ---------------- 	| ----------		 | ------------ 			| ------------------------			 | -------------     |
+		| public           		| 		✔         | 			✔           	| 				✔                         | 			✔         |
+		| protected       	| 		✔         | 			✔           	| 				✔                         | 			❌         |
+		| default          		|		✔         | 			✔           	| 				❌                         | 			❌         |
+		| private          		| 		✔         | 			❌           	| 				❌                         | 			❌         |
+		
+		

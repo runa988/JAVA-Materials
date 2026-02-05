@@ -1,0 +1,206 @@
+What is Inheritance?
+--------------------------
+Inheritance is a mechanism in Java by which one class acquires the properties (variables) and behaviors (methods) of another class.
+
+1. Promotes code reusability
+2. Supports method overriding
+3. Helps achieve runtime polymorphism
+
+Basic Terminology
+----------------------
+
+	Term				Meaning
+	------               -------------
+Superclass			Parent / Base class
+Subclass				Child / Derived class
+extends				Keyword used to inherit a class
+implements			Used to inherit interfaces
+
+Syntax of Inheritance:
+---------------------------
+class Parent {
+    int a = 10;
+}
+
+class Child extends Parent {
+    void display() {
+        System.out.println(a);
+    }
+}
+
+Why Inheritance is Needed?
+----------------------------------
+
+1. Avoids duplicate code
+2. Improves maintainability
+3. Establishes IS-A relationship
+4. Enables method overriding
+
+Types of Inheritance in Java
+----------------------------------
+1️ Single Inheritance
+------------------------
+One child inherits from one parent.
+
+class A {
+    void show() {
+        System.out.println("Class A");
+    }
+}
+
+class B extends A {
+}
+✔ Supported in Java
+
+2️ Multilevel Inheritance
+-----------------------------
+A class inherits from another derived class.
+
+class A {
+    void methodA() {
+        System.out.println("A");
+    }
+}
+
+class B extends A {
+    void methodB() {
+        System.out.println("B");
+    }
+}
+
+class C extends B {
+    void methodC() {
+        System.out.println("C");
+    }
+}
+✔ Supported in Java
+
+3️ Hierarchical Inheritance
+-------------------------------
+Multiple child classes inherit from one parent.
+
+class A {
+    void show() {
+        System.out.println("Parent");
+    }
+}
+
+class B extends A {
+}
+
+class C extends A {
+}
+✔ Supported in Java
+
+4️ Multiple Inheritance (❌ NOT supported with classes)
+-------------------------------------------------------------------
+A class cannot inherit from more than one class.
+
+❌ Invalid in Java
+class C extends A, B {
+}
+
+❌ Causes Diamond Problem
+
+5️ Hybrid Inheritance (❌ with classes)
+----------------------------------------------
+Combination of two or more types.
+
+❌ Not supported using classes
+✔ Achieved using interfaces
+
+🔹 Why Java Does NOT Support Multiple Inheritance (Classes)?
+Diamond Problem
+----------------------
+      A
+     /   \
+   B   C
+     \   /
+      D  ❓ If A has a method → which version should D use?
+
+👉 To avoid ambiguity, Java does not allow multiple inheritance with classes.
+
+Inheritance Using interface (Multiple Inheritance ✔)
+---------------------------------------------------------------
+interface A {
+    void show();
+}
+
+interface B {
+    void display();
+}
+
+class C implements A, B {
+    public void show() {
+        System.out.println("A method");
+    }
+
+    public void display() {
+        System.out.println("B method");
+    }
+}
+
+✔ Multiple inheritance achieved safely
+
+super Keyword in Inheritance
+------------------------------------
+Uses of super
+1. Access parent class variable
+2. Call parent class method
+3. Call parent class constructor
+
+class A {
+    int x = 10;
+}
+
+class B extends A {
+    int x = 20;
+
+    void display() {
+        System.out.println(super.x);
+    }
+}
+
+Method Overriding
+-----------------------
+When a child class provides a specific implementation of a parent class method.
+
+class A {
+    void show() {
+        System.out.println("Parent");
+    }
+}
+
+class B extends A {
+    @Override
+    void show() {
+        System.out.println("Child");
+    }
+}
+
+✔ Happens at runtime
+✔ Used for polymorphism
+
+Rules of Inheritance in Java
+----------------------------------
+
+✔ Child class inherits public & protected members
+❌ Private members are not inherited
+✔ Constructors are not inherited
+✔ One class can extend only one class
+✔ final class cannot be inherited
+✔ final method cannot be overridden
+
+Advantages of Inheritance
+--------------------------------
+1. Code reusability
+2. Reduced redundancy
+3. Faster development
+4. Easy maintenance
+5. Supports polymorphism
+
+Limitations of Inheritance
+-------------------------------
+1. Tight coupling
+2. Increases complexity
+3. Multiple inheritance not supported (classes)

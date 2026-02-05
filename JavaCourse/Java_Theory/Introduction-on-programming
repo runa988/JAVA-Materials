@@ -1,0 +1,114 @@
+INTRODUCTION TO PROGRAMMING
+--------------------------------------------------
+
+1️ What is a Program?
+--------------------------
+A program is a set of instructions written in a programming language that directs a computer to perform a specific task.
+
+Key Points
+-------------
+1. Written by a programmer
+2. Executed by a computer
+3. Solves a problem or performs a task
+4. Follows a logical sequence
+
+2️ What is Programming?
+------------------------------
+Programming is the process of designing, writing, testing, and maintaining programs to solve problems using a computer.
+
+Steps in Programming
+--------------------------
+1. Problem understanding
+2. Algorithm design
+3. Coding
+4. Testing & debugging
+5. Maintenance
+
+
+3️ What is a Programming Language?
+--------------------------------------------
+A programming language is a formal language used to write programs so that computers can understand and execute instructions.
+
+Purpose
+----------
+1. Communicate with computers
+2. Solve real-world problems
+3. Develop software and applications
+
+📌 Examples: C, Java, Python
+
+4️ Types of Programming Languages (Based on Level)
+-----------------------------------------------------------------
+
+4.1 Machine-Level Language
+------------------------------------
+1. Written in binary (0s and 1s)
+2. Directly understood by hardware
+3. Machine dependent
+4. Very difficult to write
+
+📌 Example: 10101001
+
+4.2 Assembly-Level Language
+-------------------------------------
+1. Uses mnemonics like ADD, MOV
+2. Requires an assembler
+3. Machine dependent
+
+📌 Example: ADD A, B
+
+4.3 High-Level Language
+-------------------------------
+1. English-like syntax
+2. Easy to learn and write
+3. Machine independent
+4. Requires compiler or interpreter
+
+📌 Examples: C, Java, Python
+
+4.4 Middle-Level Language
+----------------------------------
+1. Supports high-level features
+2. Also allows low-level memory access
+
+📌 Example: C
+
+5️  Types of Programming (Paradigms)
+----------------------------------------------
+
+5.1 Procedural Programming
+----------------------------------
+1. Program divided into functions
+2. Focus on step-by-step execution
+
+📌 Example: C
+
+5.2 Object-Oriented Programming (OOP)
+--------------------------------------------------
+1. Program built using objects and classes
+2. Data + methods combined
+
+📌 Core Concepts:
+1. Class
+2. Object
+3. Encapsulation
+4. Inheritance
+5. Polymorphism
+6. Abstraction
+
+📌 Example: Java
+
+5.3 Scripting Programming
+--------------------------------
+1. Used for automation
+2. Interpreted
+
+📌 Example: Python
+
+5.4 Functional Programming
+----------------------------------
+1. Uses mathematical functions
+2. Avoids changing data
+
+📌 Example: Python (supports FP)
+
